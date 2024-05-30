@@ -20,13 +20,15 @@ type productsType = {
   currentprice?: number;
 };
 
+type ProductSliderProps = {
+  products: productsType[];
+  cartStatus: string;
+};
+
 export default function ProductSlider({
   products,
   cartStatus,
-}: {
-  products: productsType[];
-  cartStatus: String;
-}) {
+}: ProductSliderProps) {
   return (
     <>
       <Swiper
