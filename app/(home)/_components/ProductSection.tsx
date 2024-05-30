@@ -90,7 +90,7 @@ const ProductSection = () => {
         </div>
 
         <div className="grid grid-cols-5 items-center gap-2.5 ">
-          {data && data.map((product) => <Cart product={product} />)}
+          {data && data.map((product) => <Cart key={product.id} product={product} />)}
         </div>
       </div>
     </section>
