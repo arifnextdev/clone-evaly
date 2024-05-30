@@ -11,6 +11,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import DealCart from "@/app/Components/ui/DealCart";
 import Cart from "@/app/Components/ui/Cart";
 import ShopCart from "@/app/Components/ui/ShopCart";
+import TrendingProduct from "./TrendingProduct";
 
 type productsType = {
   id: number;
@@ -20,17 +21,15 @@ type productsType = {
   currentprice?: number;
 };
 
-export default function ProductSlider({
+export default function TrendingSlider({
   products,
-  cartStatus,
 }: {
   products: productsType[];
-  cartStatus: string;
 }) {
   return (
     <>
       <Swiper
-        slidesPerView={6}
+        slidesPerView={5}
         spaceBetween={30}
         grabCursor={true}
         pagination={{
@@ -41,11 +40,7 @@ export default function ProductSlider({
         {products &&
           products.map((product) => (
             <SwiperSlide key={product.id}>
-              {cartStatus === "DealCart" ? (
-                <DealCart product={product} />
-              ) : (
-                <ShopCart product={product} />
-              )}
+              {<Cart product={product} />}
             </SwiperSlide>
           ))}
       </Swiper>
