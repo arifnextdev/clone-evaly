@@ -3,7 +3,6 @@ import DealCart from "../Components/ui/DealCart";
 import DealCartSection from "./_components/DealCartSection";
 import FlashSale from "./_components/FlashSale";
 import TrendingProduct from "./_components/TrendingProduct";
-import CustomSlider from "../Components/slider/Slider";
 import ProductSection from "./_components/ProductSection";
 import HeroSection from "./_components/HeroSection";
 import ProductSlider from "./_components/ProductSlider";
