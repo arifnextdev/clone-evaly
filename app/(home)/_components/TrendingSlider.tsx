@@ -10,15 +10,13 @@ import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 import DealCart from "@/app/Components/ui/DealCart";
 import Cart from "@/app/Components/ui/Cart";
-import ShopCart from "@/app/Components/ui/ShopCart";
-import TrendingProduct from "./TrendingProduct";
+
 
 type productsType = {
   id: number;
   title: String;
   img: String;
   price?: number;
-  currentprice?: number;
 };
 
 export default function TrendingSlider({

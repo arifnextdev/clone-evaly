@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 import { Pagination, Navigation } from "swiper/modules";
 import DealCart from "@/app/Components/ui/DealCart";
-import Cart from "@/app/Components/ui/Cart";
+
 import ShopCart from "@/app/Components/ui/ShopCart";
 
 type productsType = {
@@ -25,7 +25,7 @@ export default function ProductSlider({
   cartStatus,
 }: {
   products: productsType[];
-  cartStatus: string;
+  cartStatus: String;
 }) {
   return (
     <>
