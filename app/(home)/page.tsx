@@ -6,15 +6,18 @@ import TrendingProduct from "./_components/TrendingProduct";
 import CustomSlider from "../Components/slider/Slider";
 import ProductSection from "./_components/ProductSection";
 import HeroSection from "./_components/HeroSection";
+import ProductSlider from "./_components/ProductSlider";
+
 
 const Home = () => {
   return (
-    <main className="wrapper">
+    <main className="wrapper mt-36 z-10">
       <HeroSection />
       <DealCartSection />
       <FlashSale />
       <TrendingProduct />
       <ProductSection />
+      <ProductSlider />
     </main>
   );
 };

@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./Components/Header";
 import SubHeader from "./Components/SubHeader";
 import Footer from "./Components/Footer";
+import FixedHeader from "./(home)/_components/FixedHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <SubHeader />
+        <FixedHeader />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

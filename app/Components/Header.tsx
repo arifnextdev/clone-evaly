@@ -8,7 +8,7 @@ import { MdAddShoppingCart } from "react-icons/md";
 
 const Header = () => {
   return (
-    <header className="border-b border-gray">
+    <header className="border-b border-gray bg-white">
       <div className="wrapper">
         <div className="flex justify-between py-3">
           <div className="flex items-center gap-5">

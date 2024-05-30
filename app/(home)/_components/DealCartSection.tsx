@@ -1,6 +1,16 @@
 import DealCart from "@/app/Components/ui/DealCart";
 import Image from "next/image";
+import { title } from "process";
 import React from "react";
+
+const data = [
+  {
+    id:1,
+    title:'',
+    img:'',
+    
+  }
+]
 
 const DealCartSection = () => {
   return (
@@ -25,12 +35,7 @@ const DealCartSection = () => {
       </div>
       <div className="w-full overflow-hidden flex flex-col md:flex-row items-center gap-2.5">
         <DealCart />
-        <DealCart />
-        <DealCart />
-        <DealCart />
-        <DealCart />
-        <DealCart />
-        <DealCart />
+       
       </div>
     </section>
   );
