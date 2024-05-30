@@ -8,7 +8,6 @@ import ProductSection from "./_components/ProductSection";
 import HeroSection from "./_components/HeroSection";
 import ProductSlider from "./_components/ProductSlider";
 
-
 const Home = () => {
   return (
     <main className="wrapper mt-36 z-10">
@@ -17,7 +16,6 @@ const Home = () => {
       <FlashSale />
       <TrendingProduct />
       <ProductSection />
-      <ProductSlider />
     </main>
   );
 };
