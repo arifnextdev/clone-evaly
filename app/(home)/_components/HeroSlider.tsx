@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -52,12 +52,12 @@ export default function HeroSlider() {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 500,
+          delay: 1000,
           disableOnInteraction: false,
         }}
         speed={700}
         loop={true}
-        modules={[Pagination]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper">
         {data &&
           data.map((item) => (
