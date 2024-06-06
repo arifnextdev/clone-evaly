@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-blackmd text-white py-20">
-      <div className="wrapper grid grid-cols-4 gap-5 ">
+      <div className="wrapper flex flex-col  lg:grid md:grid-cols-4 gap-5 ">
         <div className="flex flex-col gap-2.5">
           <h2 className="text-5xl font-bold">Evaly</h2>
           <p>

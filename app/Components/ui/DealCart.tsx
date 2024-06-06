@@ -11,8 +11,6 @@ interface ProductProps {
 }
 
 const DealCart = ({ product }: { product: ProductProps }) => {
-  console.log(product);
-
   return (
     product && (
       <>

@@ -89,7 +89,7 @@ const ProductSection = () => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-5 items-center gap-2.5 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 xl:grid-cols-4 2xl: gird-cols-5 items-center lg:gap-2.5 ">
           {data && data.map((product) => <Cart key={product.id} product={product} />)}
         </div>
       </div>

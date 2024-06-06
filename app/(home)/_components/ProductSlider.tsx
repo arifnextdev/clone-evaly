@@ -33,8 +33,31 @@ export default function ProductSlider({
     <>
       <Swiper
         slidesPerView={6}
-        spaceBetween={30}
+        spaceBetween={20}
         grabCursor={true}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          400: {
+            slidesPerView: 3,
+          },
+          700: {
+            slidesPerView: 4,
+          },
+          865: {
+            slidesPerView: 4,
+          },
+          1000: {
+            slidesPerView: 4,
+          },
+          1500: {
+            slidesPerView: 5,
+          },
+          1700: {
+            slidesPerView: 6,
+          },
+        }}
         pagination={{
           clickable: true,
         }}

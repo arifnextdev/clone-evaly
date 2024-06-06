@@ -6,7 +6,7 @@ import { FaHome } from "react-icons/fa";
 
 const SubHeader = () => {
   return (
-    <div className="py-5 border-b border-gray/50 shadow-md bg-white">
+    <div className="hidden md:block py-5 border-b border-gray/50 shadow-md bg-white">
       <ul className="wrapper text-blacklg flex gap-5">
         <li>
           <Link href="#" className="flex items-center gap-2">

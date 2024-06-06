@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .wrapper {
-  @apply container mx-auto w-[60%];
+  @apply container mx-auto lg:w-[80%] 2xl:w-[60%] px-5 md:px-10 lg:px-0;
 }
 
 .swiper {

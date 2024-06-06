@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <FixedHeader />
-        {children}
+        <main className="mt-[100px] md:mt-[200px]">{children}</main>
         <Footer />
       </body>
     </html>
